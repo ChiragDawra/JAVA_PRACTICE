@@ -9,21 +9,27 @@
 //     }
 // }
 //que 34 
+// class Solution {
+//     public int[] searchRange(int[] nums, int target) {
+//         int i =0;
+//         int j=nums.length-1;
+//         while(i<=j){
+//             if(target==nums[i] && target==nums[j]){
+//                 return new int[] {i,j};
+//             }
+//             if(nums[i]<target){
+//                 i++;
+//             }
+//             if(nums[j]>target){
+//                 j--;
+//             }
+//         }
+//         return new int[] {-1,-1};
+//     }
+// }
+//50 
 class Solution {
-    public int[] searchRange(int[] nums, int target) {
-        int i =0;
-        int j=nums.length-1;
-        while(i<=j){
-            if(target==nums[i] && target==nums[j]){
-                return new int[] {i,j};
-            }
-            if(nums[i]<target){
-                i++;
-            }
-            if(nums[j]>target){
-                j--;
-            }
-        }
-        return new int[] {-1,-1};
+    public double myPow(double x, int n) {
+        return Math.pow(x,n);
     }
 }
