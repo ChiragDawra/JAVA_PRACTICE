@@ -27,3 +27,26 @@
 //         return rem - count;
 //     }
 // }
+// que 136
+// class Solution {
+//     public int singleNumber(int[] nums) {
+//         int k = 0;
+//         for(int i=0;i<nums.length;i++){
+//             k^=nums[i];
+//         }
+//         return k;
+//         // for(int i=1;i<nums.length;i++){
+//         //     boolean updated=false;
+//         //     if(nums[i]==nums[k]){
+//         //         k+=2;
+//         //         updated=true;
+//         //     }
+//         //     else{
+//         //         if(updated){
+
+//         //         }
+//         //         return Unique;
+//         //     }
+//         // }
+//     }
+// }
