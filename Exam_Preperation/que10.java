@@ -4,15 +4,17 @@ class que10{
         int max = 0;
         for(int i=1;i<arr.length-2;i++){
             if(arr[i]>max){
-                max = arr[i];
+                max = i;
             }
         }
-        if(max>arr[0] || max>arr[arr.length]){
-            if(max>arr[0]){
-                arr[0]=max;
+        if(arr[max]>arr[0] || arr[max]>arr[arr.length-1]){
+            if(arr[max]>arr[0]){
+                int temp = arr[0];
+                arr[0]=arr[max];
+                arr[max] = arr[0];
             }
             else{
-                arr[5]=max;
+                arr[5]=arr[max];
             }
         }
         for(int i=0;i<arr.length;i++){
